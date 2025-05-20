@@ -15,6 +15,7 @@ export const routes = [
 
 export default [
   { path: '/login', component: '@/pages/login' },
+  { path: '/h5login', component: '@/pages/login/h5login' },
   { path: '/register', component: '@/pages/register' },
   {
     path: '/',

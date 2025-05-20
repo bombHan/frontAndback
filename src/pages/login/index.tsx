@@ -3,6 +3,7 @@ import { Breadcrumb, Layout, Menu, Avatar, Form, Input, Button, message } from '
 import logo from '@/assets/logo.png'
 import { login } from '@/services/index'
 import { history } from 'umi'
+import { QRCodeSVG } from 'qrcode.react';
 
 
 const { Header, Content, Sider } = Layout;
@@ -33,6 +34,7 @@ const Index = () => {
       <Layout>
         <Layout style={{ padding: '20px', background: '#fff', }}>
           <div style={{ margin: '200px auto 0', width: 400 }}>
+            <QRCodeSVG value="https://reactjs.org/" />
             <h1
               style={{ fontSize: 24, textAlign: 'center', marginBottom: 20 }}
             >
