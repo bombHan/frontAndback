@@ -1,0 +1,35 @@
+@primary-color: var(--antd-wave-shadow-color);
+
+
+#root {
+  height: 100%;
+
+  .layout {
+    height: 100%;
+
+    .header {
+      display        : flex;
+      align-items    : center;
+      justify-content: space-between;
+      padding        : 0 20px;
+      color          : #fff;
+
+    }
+  }
+}
+
+.user-item {
+  padding: 0 5px;
+
+  &:hover {
+    background: #ccc !important;
+  }
+}
+
+.bread-item {
+  cursor: pointer;
+
+  &:hover {
+    color: @primary-color;
+  }
+}

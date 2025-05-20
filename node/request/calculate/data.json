@@ -1,0 +1,60 @@
+{
+  "flag": 36,
+  "list": [
+    {
+      "salary": 19000,
+      "name": "安",
+      "currentTime": "2025/5/9 16:01:33",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.59(0x18003b25) NetType/WIFI Language/zh_CN",
+        "isMobile": true
+      },
+      "ip": "2409:8929:785:87e5:f5a0:9910:29e1:8a41",
+      "id": 29
+    },
+    {
+      "salary": 19000,
+      "name": "安",
+      "currentTime": "2025/5/9 16:01:34",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.59(0x18003b25) NetType/WIFI Language/zh_CN",
+        "isMobile": true
+      },
+      "ip": "2409:8929:785:87e5:f5a0:9910:29e1:8a41",
+      "id": 30
+    },
+    {
+      "salary": 1919,
+      "currentTime": "2025/5/9 17:17:04",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是填表的信息",
+      "ip": "211.75.210.20",
+      "id": 33
+    },
+    {
+      "salary": 123123,
+      "currentTime": "2025/5/12 10:26:31",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是填表的信息",
+      "ip": "59.125.62.188",
+      "id": 34
+    },
+    {
+      "salary": 10000,
+      "currentTime": "2025/5/19 11:09:41",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是填表的信息",
+      "ip": "127.0.0.1",
+      "id": 35
+    }
+  ]
+}
