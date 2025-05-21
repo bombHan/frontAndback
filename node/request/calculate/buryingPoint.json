@@ -1,5 +1,5 @@
 {
-  "flagB": 132,
+  "flagB": 134,
   "listB": [
     {
       "currentTime": "2025/5/9 17:07:07",
@@ -1078,6 +1078,28 @@
       "buryingPoint": true,
       "ip": "127.0.0.1",
       "id": 131
+    },
+    {
+      "currentTime": "2025/5/21 10:24:29",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是进来就偷的信息",
+      "buryingPoint": true,
+      "ip": "127.0.0.1",
+      "id": 132
+    },
+    {
+      "currentTime": "2025/5/21 10:47:51",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是进来就偷的信息",
+      "buryingPoint": true,
+      "ip": "127.0.0.1",
+      "id": 133
     }
   ]
 }

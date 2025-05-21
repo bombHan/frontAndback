@@ -1,7 +1,7 @@
 
 import { request } from 'umi'
-// const url = 'https://9fd5-60-249-35-37.ngrok-free.app'
-const url = 'http://0.0.0.0:3001'
+const url = 'https://b9ae-59-125-62-188.ngrok-free.app'
+// const url = 'http://0.0.0.0:3001'
 
 export const login = (data: any) => {
   return request(`${url}/user/login`, {

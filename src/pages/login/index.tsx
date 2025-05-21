@@ -34,7 +34,7 @@ const Index = () => {
       <Layout>
         <Layout style={{ padding: '20px', background: '#fff', }}>
           <div style={{ margin: '200px auto 0', width: 400 }}>
-            <QRCodeSVG value="https://reactjs.org/" />
+            {/* <QRCodeSVG value="https://reactjs.org/" /> */}
             <h1
               style={{ fontSize: 24, textAlign: 'center', marginBottom: 20 }}
             >
