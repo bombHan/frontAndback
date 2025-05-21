@@ -77,89 +77,87 @@ const Index = (props: any) => {
   // console.log(getSelectMenuItem(menuItems))
   return (
     <>
-      {
-        info.id && <Layout className='layout'>
-          <Header className="header">
-            <img src={logo} />
-            <div>
-              <Popover
-                placement="bottomRight"
-                content={<div style={{ width: '150px' }}>
-                  <div
-                    className='user-item'
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => {
-                      history.push({ pathname: '/userInfo' })
-                      setselectedKeys(['/userInfo'])
-                    }}
-                  >
-                    个人信息
-                  </div>
-                  <Divider type="horizontal" style={{ margin: '10px 0' }} />
-                  <div
-                    className='user-item'
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => {
-                      window.localStorage.clear()
-                      history.push({ pathname: '/login' })
-                    }}
-                  >
-                    退出
-                  </div>
-                </div>}
-                title={
-                  <div style={{ height: 30, lineHeight: '30px' }}>
-                    <b>{info.name}</b>
-                  </div>
-                }
-                trigger="hover"
-              >
-                <Avatar style={{ backgroundColor: '#1890ff' }}>
-                  {info.name}
-                </Avatar>
-              </Popover>
-            </div>
-          </Header>
-          <Layout>
-            <Sider style={{ display: !!getSelectMenuItem(menuItems).key ? undefined : 'none' }} width={250}>
-              <Menu
-                mode="inline"
-                selectedKeys={selectedKeys}
-                style={{ height: '100%', borderRight: 0 }}
-                items={menuItems}
-                onClick={menuOnClick}
-              />
-            </Sider>
-            <Layout style={{ padding: '20px' }}>
-              <Breadcrumb style={{ margin: '0 0 15px 0' }}>
-                <Breadcrumb.Item
-                  className='bread-item'
-                  onClick={() => { setselectedKeys(['/homepage']); history.push({ pathname: '/homepage' }) }}
+      <Layout className='layout'>
+        <Header className="header">
+          <img src={logo} />
+          <div>
+            <Popover
+              placement="bottomRight"
+              content={<div style={{ width: '150px' }}>
+                <div
+                  className='user-item'
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    history.push({ pathname: '/userInfo' })
+                    setselectedKeys(['/userInfo'])
+                  }}
                 >
-                  <HomeOutlined style={{ marginRight: 5 }} />
-                  首页
-                </Breadcrumb.Item>
-                {
-                  selectedKeys[0] !== '/homepage' && (getSelectMenuItem(menuItems).labelList || []).map((item: any, index: number) => {
-                    return <Breadcrumb.Item key={index}>{item.label}</Breadcrumb.Item>
-                  })
-
-                }
-              </Breadcrumb>
-              <Content
-                style={{
-                  padding: 20,
-                  margin: 0,
-                  minHeight: 280,
-                  background: '#fff'
-                }}
+                  个人信息
+                </div>
+                <Divider type="horizontal" style={{ margin: '10px 0' }} />
+                <div
+                  className='user-item'
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    window.localStorage.clear()
+                    history.push({ pathname: '/login' })
+                  }}
+                >
+                  退出
+                </div>
+              </div>}
+              title={
+                <div style={{ height: 30, lineHeight: '30px' }}>
+                  <b>{info.name}</b>
+                </div>
+              }
+              trigger="hover"
+            >
+              <Avatar style={{ backgroundColor: '#1890ff' }}>
+                {info.name}
+              </Avatar>
+            </Popover>
+          </div>
+        </Header>
+        <Layout>
+          <Sider style={{ display: !!getSelectMenuItem(menuItems).key ? undefined : 'none' }} width={250}>
+            <Menu
+              mode="inline"
+              selectedKeys={selectedKeys}
+              style={{ height: '100%', borderRight: 0 }}
+              items={menuItems}
+              onClick={menuOnClick}
+            />
+          </Sider>
+          <Layout style={{ padding: '20px' }}>
+            <Breadcrumb style={{ margin: '0 0 15px 0' }}>
+              <Breadcrumb.Item
+                className='bread-item'
+                onClick={() => { setselectedKeys(['/homepage']); history.push({ pathname: '/homepage' }) }}
               >
-                {props.children}
-              </Content>
-            </Layout>
+                <HomeOutlined style={{ marginRight: 5 }} />
+                首页
+              </Breadcrumb.Item>
+              {
+                selectedKeys[0] !== '/homepage' && (getSelectMenuItem(menuItems).labelList || []).map((item: any, index: number) => {
+                  return <Breadcrumb.Item key={index}>{item.label}</Breadcrumb.Item>
+                })
+
+              }
+            </Breadcrumb>
+            <Content
+              style={{
+                padding: 20,
+                margin: 0,
+                minHeight: 280,
+                background: '#fff'
+              }}
+            >
+              {props.children}
+            </Content>
           </Layout>
         </Layout>
-      }
+      </Layout>
 
     </>
   )

@@ -82,7 +82,17 @@ const request = (req, res) => {
         let result = { success: false, errorMessage: '系统报错' }
 
         // 不同的接口请求处理
-        if (path === pathList[1]) {
+        if (path === pathList[0]) {
+          // 查询用户信息
+          let targetUser = list.find(item => item.id === params.id)
+          targetUser = { ...targetUser }
+          if (targetUser) {
+            delete targetUser.password
+            result = { success: true, message: '查询成功', ...targetUser }
+          } else {
+            result = { success: false, errorMessage: '登录失败' }
+          }
+        } else if (path === pathList[1]) {
           // 登录
           const targetUser = list.find((item) => { return item.account === params.account || item.phone === params.account })
           console.log('targetUser', targetUser)

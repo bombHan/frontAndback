@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react';
-import { getUserInfo } from '@/services'
+import { getUserInfo, postUserInfo } from '@/services'
 import { history } from 'umi'
 import { message } from 'antd'
 
@@ -15,7 +15,7 @@ export default function useInfo() {
   }, []);
 
   const initUser = async () => {
-    await getUserInfo().then((res) => {
+    await postUserInfo().then((res) => {
       // console.log('userInfo', res)
       if (res.id) {
         setinfo(res)

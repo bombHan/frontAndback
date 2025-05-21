@@ -7,7 +7,17 @@ export default defineConfig({
   publicPath: `./`,
   favicon: '/icon.gif',
   proxy: {
+    // '/': {
+    //   target,
+    //   // pathRewrite: {'^/platformConfig': ''},
+    //   changeOrigin: true,
+    // },
     '/data': {
+      target,
+      // pathRewrite: {'^/platformConfig': ''},
+      changeOrigin: true,
+    },
+    '/user': {
       target,
       // pathRewrite: {'^/platformConfig': ''},
       changeOrigin: true,

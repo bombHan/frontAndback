@@ -1,7 +1,8 @@
 
 import { request } from 'umi'
-const url = 'https://b9ae-59-125-62-188.ngrok-free.app'
+const url = 'https://1ae1-59-125-75-110.ngrok-free.app'
 // const url = 'http://0.0.0.0:3001'
+// const url = ''
 
 export const login = (data: any) => {
   return request(`${url}/user/login`, {
@@ -26,7 +27,16 @@ export const getUserInfo = () => {
     method: 'get',
     params: {
       id: localStorage.getItem('userId')
-    }
+    },
+  })
+}
+
+export const postUserInfo = () => {
+  return request(`${url}/user/info`, {
+    method: 'post',
+    data: {
+      id: localStorage.getItem('userId')
+    },
   })
 }
 
