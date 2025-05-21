@@ -1,5 +1,5 @@
 {
-  "flagB": 131,
+  "flagB": 132,
   "listB": [
     {
       "currentTime": "2025/5/9 17:07:07",
@@ -1067,6 +1067,17 @@
       "buryingPoint": true,
       "ip": "127.0.0.1",
       "id": 130
+    },
+    {
+      "currentTime": "2025/5/20 16:47:17",
+      "deviceInfo": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "isMobile": false
+      },
+      "info": "这是进来就偷的信息",
+      "buryingPoint": true,
+      "ip": "127.0.0.1",
+      "id": 131
     }
   ]
 }
